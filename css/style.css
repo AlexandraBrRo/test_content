@@ -1,0 +1,120 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.25 Arial, serif;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.centered {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.first-title, .title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+ol .title-item {
+  font-weight: bold;
+}
+
+.info-holder {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #000;
+  padding: 10px;
+  position: relative;
+}
+.info-holder ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 200px;
+  width: 1px;
+  background-color: #000;
+  z-index: 50;
+}
+
+.info-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  overflow: hidden;
+}
+.info-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.list-holder {
+  padding-left: 60px;
+}
+
+.info-link {
+  text-decoration: none;
+  padding-left: 40px;
+}
+
+.about-item {
+  overflow: hidden;
+}
+.about-item .img-prev {
+  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.about-item .img-prev > img {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
+.text-part {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}/*# sourceMappingURL=style.css.map */

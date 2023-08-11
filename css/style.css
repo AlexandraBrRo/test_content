@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,7 +31,7 @@ body {
 }
 
 .centered {
-  max-width: 1200px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -45,11 +46,11 @@ body {
   padding-bottom: 20px;
 }
 
-ol {
+.title-item {
   list-style-type: none;
   padding: 0;
 }
-ol .title-item {
+.title-item .title-part {
   font-weight: bold;
 }
 
@@ -98,23 +99,25 @@ ol .title-item {
 }
 
 .about-item {
-  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .about-item .img-prev {
-  width: 50%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  float: left; /* Вирівнювання по лівому краю */
+  margin: 0px 7px 7px 0;
 }
-.about-item .img-prev > img {
-  display: block;
-  width: 400px;
-  height: 400px;
+.about-item .text-part {
+  max-width: 590px;
 }
 
-.text-part {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.title-txt {
+  padding-bottom: 70px;
+  display: block;
+}
+
+.info-text {
+  max-width: 550px;
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
